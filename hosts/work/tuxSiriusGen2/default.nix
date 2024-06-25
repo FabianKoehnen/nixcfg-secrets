@@ -1,6 +1,6 @@
 {...}: {
   imports = [
-    ../../modules/yubikey
+    ../../../modules/yubikey
   ];
 
   users.users.fabian.hashedPassword = "$y$j9T$ZRSrGyql6kwEpH4RXtD8h.$pJAQKVbbvmuPd25VqUCK867M0cUG.dWoS2fDtUH/S33";
