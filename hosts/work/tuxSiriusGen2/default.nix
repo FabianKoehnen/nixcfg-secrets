@@ -8,4 +8,11 @@
   systemd.tmpfiles.rules = [
     "L /root/.ssh - - - - /home/fabian/.ssh"
   ];
+
+  networking.hosts = {
+    "127.0.0.1" = [
+      "elfbar.docker"
+      "petfriends.docker"
+    ];
+  };
 }
