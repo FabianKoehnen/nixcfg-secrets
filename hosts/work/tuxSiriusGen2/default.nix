@@ -17,6 +17,9 @@
     ];
   };
 
+  boot.kernel.sysctl  = {
+    "net.ipv4.ip_unprivileged_port_start" = 23;
+  };
 
   security.pam.services.sddm.enableGnomeKeyring = true;
   services.gnome.gnome-keyring.enable = true;
