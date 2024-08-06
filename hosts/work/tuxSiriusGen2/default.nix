@@ -13,6 +13,13 @@
     "127.0.0.1" = [
       "elfbar.docker"
       "petfriends.docker"
+      "edh.docker"
     ];
   };
+
+
+  security.pam.services.sddm.enableGnomeKeyring = true;
+  services.gnome.gnome-keyring.enable = true;
+  programs.seahorse.enable = true;
+
 }
